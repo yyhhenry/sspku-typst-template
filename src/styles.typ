@@ -86,7 +86,7 @@
   body
 }
 
-#let paper-study-report(
+#let sspku-document(
   姓名: [姓名],
   学号: [250xxx0xxx],
   日期: [2025年x月x日],

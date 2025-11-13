@@ -1,5 +1,5 @@
 
-#import "lib.typ": cn-font-size, font-color, font-family, ind, paper-study-report, references
+#import "lib.typ": cn-font-size, font-color, font-family, ind, references, sspku-document
 
 #set page(margin: (x: 3cm, y: 2.5cm))
 #set text(
@@ -10,7 +10,7 @@
 )
 #set par(spacing: 1em, leading: 1em, justify: true)
 
-#show: body => paper-study-report(
+#show: body => sspku-document(
   姓名: [姓名],
   学号: [250xxx0xxx],
   日期: [2025年x月x日],
