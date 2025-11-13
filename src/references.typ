@@ -2,9 +2,9 @@
 // See also https://github.com/nju-lug/modern-nju-thesis/issues/3
 // Original author: csimide, OrangeX4
 
-#import "style.typ": cn-font-size
+#import "fonts.typ": cn-font-size
 
-#let bilingual-bibliography(
+#let references(
   bibliography: none,
   mapping: (:),
   extra-comma-before-et-al-trans: false,

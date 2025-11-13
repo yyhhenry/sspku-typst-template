@@ -1,6 +1,6 @@
 #import "@preview/cuti:0.2.1": show-cn-fakebold
 
-#import "font-style.typ": cn-font-size, font-color, font-family
+#import "fonts.typ": cn-font-size, font-color, font-family
 
 #let ind = h(2em)
 

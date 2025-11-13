@@ -1,5 +1,5 @@
 
-#import "lib.typ": bilingual-bibliography, cn-font-size, font-color, font-family, ind, paper-study-report
+#import "lib.typ": cn-font-size, font-color, font-family, ind, paper-study-report, references
 
 #set page(margin: (x: 3cm, y: 2.5cm))
 #set text(
@@ -35,4 +35,4 @@
 = 参考文献
 
 #let std_bib = bibliography("ref.bib", title: none, style: "gb-7714-2015-numeric")
-#bilingual-bibliography(bibliography: std_bib)
+#references(bibliography: std_bib)
