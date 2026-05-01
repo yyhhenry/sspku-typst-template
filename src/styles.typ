@@ -32,6 +32,14 @@
     ]
     fakepar
   }
+  show figure.where(kind: raw): it => {
+    rect(stroke: none)[
+      #it.body
+      #v(-0.5em)
+      #it.caption
+    ]
+    fakepar
+  }
   show raw.where(block: true): it => {
     text(font: font-family.等宽)[#it]
     fakepar
@@ -63,6 +71,7 @@
 #let re-index = {
   counter(figure.where(kind: image)).update(0)
   counter(figure.where(kind: table)).update(0)
+  counter(figure.where(kind: raw)).update(0)
   counter(math.equation).update(0)
 }
 
