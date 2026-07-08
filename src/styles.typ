@@ -48,6 +48,8 @@
     it
     fakepar
   }
+  set list(indent: 2em)
+  set enum(indent: 2em)
   show list: it => {
     it
     fakepar
