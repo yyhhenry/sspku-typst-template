@@ -19,7 +19,7 @@ sspku-typst-template/
 ├── ref.bib              # 示例参考文献
 └── src/
     ├── fonts.typ        # 字号、字体族、颜色定义
-    ├── styles.typ       # 排版规则与 sspku-document 函数
+    ├── styles.typ       # 排版规则与文档包装函数
     └── references.typ   # 中英文双语参考文献处理
 ```
 
@@ -27,7 +27,8 @@ sspku-typst-template/
 
 | 导出名 | 说明 |
 |--------|------|
-| `sspku-document` | 文档包装函数（页眉、页脚、标题页、章节编号） |
+| `sspku-document` | 课程报告包装函数（学院页眉、姓名学号标题页、页脚、章节编号） |
+| `cn-document` | 通用中文技术报告包装函数（自定义页眉、作者署名，无姓名学号栏） |
 | `references` | 中英文双语参考文献 |
 | `cn-font-size` | 中文字号字典（初号至小七） |
 | `font-family` | 字体族字典（宋体、楷体、黑体、等宽及英文别名） |
