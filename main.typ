@@ -1,5 +1,5 @@
 
-#import "lib.typ": cn-font-size, font-color, font-family, ind, references, sspku-document
+#import "lib.typ": cn-font-size, document-frame, font-color, font-family, ind, references
 
 #set page(margin: (x: 3cm, y: 2.5cm))
 #set text(
@@ -10,12 +10,17 @@
 )
 #set par(spacing: 1em, leading: 1em, justify: true)
 
-#show: body => sspku-document(
-  姓名: [姓名],
-  学号: [250xxx0xxx],
-  日期: [2025年x月x日],
+// 署名区按需增删，此处为课程报告排法：姓名学号一行、日期一行。
+#show: body => document-frame(
   页眉: [北京大学软件与微电子学院],
   标题: [通用课程报告模板],
+  署名: text(size: cn-font-size.小四)[
+    姓名：姓名
+    #h(2em)
+    学号：250xxx0xxx
+
+    2025年x月x日
+  ],
   body,
 )
 

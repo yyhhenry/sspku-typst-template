@@ -1,6 +1,6 @@
 # SSPKU Typst Template
 
-北京大学软件与微电子学院通用 Typst 模板，适用于课程报告、读书报告、实验报告等多种文档类型。
+北京大学软件与微电子学院通用 Typst 模板，适用于课程报告、读书报告、实验报告、技术报告等多种文档类型。
 
 ## 特性
 
@@ -19,7 +19,7 @@ sspku-typst-template/
 ├── ref.bib              # 示例参考文献
 └── src/
     ├── fonts.typ        # 字号、字体族、颜色定义
-    ├── styles.typ       # 排版规则与文档包装函数
+    ├── styles.typ       # 排版规则与文档骨架
     └── references.typ   # 中英文双语参考文献处理
 ```
 
@@ -27,13 +27,14 @@ sspku-typst-template/
 
 | 导出名 | 说明 |
 |--------|------|
-| `sspku-document` | 课程报告包装函数（学院页眉、姓名学号标题页、页脚、章节编号） |
-| `cn-document` | 通用中文技术报告包装函数（自定义页眉、作者署名，无姓名学号栏） |
+| `document-frame` | 文档骨架（页眉、页脚页码、居中标题块、章节与图表编号） |
 | `references` | 中英文双语参考文献 |
 | `cn-font-size` | 中文字号字典（初号至小七） |
 | `font-family` | 字体族字典（宋体、楷体、黑体、等宽及英文别名） |
 | `font-color` | 预设颜色字典 |
 | `ind` | 手动缩进，等价于 `h(2em)` |
+
+`document-frame` 有三个参数：`页眉`、`标题` 为文字，`署名` 是标题下方的自由内容，需要哪几行写哪几行——姓名学号、组员名单、作者与单位、日期、签名图片皆可。`main.typ` 给出课程报告的排法。
 
 ## 使用方式
 
@@ -50,7 +51,7 @@ git submodule add https://github.com/yyhhenry/sspku-typst-template.git
 然后在你的 `.typ` 文件中导入：
 
 ```typst
-#import "sspku-typst-template/lib.typ": cn-font-size, font-color, font-family, ind, references, sspku-document
+#import "sspku-typst-template/lib.typ": cn-font-size, document-frame, font-color, font-family, ind, references
 ```
 
 具体用法参照 `main.typ`，其中包含了完整的文档结构、参考文献引用及编译命令。
